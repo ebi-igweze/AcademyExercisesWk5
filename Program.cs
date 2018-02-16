@@ -38,29 +38,6 @@ namespace AssignmentWk5
             System.Console.WriteLine($"Comparing dogA = {dogA.Name}, with dogB = {dogB.Name} results to = {compareResult}");
             System.Console.WriteLine("\n=========================================\n");
 
-
-
-            
-            System.Console.WriteLine("\n=======================================");
-            System.Console.WriteLine("Exercise4: Checking if a Class implements");
-            System.Console.WriteLine("A given interface or sets of interfaces");
-            System.Console.WriteLine("=======================================\n");
-            // Implementing Exercise 4
-            // Technique 1: check if Document  is IStorable & IPrintable
-            var docInterfaces = typeof(Document).GetInterfaces();
-            var isStorable = docInterfaces.Contains(typeof(IStorable));
-            var isPrintable = docInterfaces.Contains(typeof(IPrintable));
-            // Technique 2: check if Document is Storable & Printable
-            var isStorable2 = typeof(IStorable).IsAssignableFrom(typeof(Document));
-            var isPrintable2 = typeof(IPrintable).IsAssignableFrom(typeof(Document));
-
-            System.Console.WriteLine("Using the first technique of checking the class interfaces:");
-            System.Console.WriteLine($"The result are IStorable = {isStorable} and IPrintable = {isPrintable}");
-            
-            System.Console.WriteLine("\nUsing the second technique of checking if the class is assignable to the interfaces:");
-            System.Console.WriteLine($"The result are IStorable = {isStorable} and IPrintable = {isPrintable}");
-            System.Console.WriteLine("\n==========================================\n");
-            
            
 
 
