@@ -22,5 +22,9 @@ namespace SecondExercise
                 return false;
             }
         }
+
+        public override int GetHashCode() {
+            return int.Parse($"{this.Weight}");
+        }
     }
 }
